@@ -1,0 +1,148 @@
+*{padding:0px; margin:0px}
+
+.nav{
+    background-color:rgb(20, 9, 185);
+    display: flex; 
+    width:100%;
+    height: 40px;
+    justify-content:space-around;
+} 
+.nav-list{
+    display: flex; 
+    padding-top:10px;
+}
+.nav-list a{
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+.av-list a:hover{
+    color: #005980;
+}
+.nav .menu{
+    display: none;
+    height: 30px; 
+    padding-top: 10px;
+}
+.nav-logo{
+    width: 40%; 
+    padding-top: 10px;
+}
+.nav-logo a{
+    color:white;
+    text-decoration:none;
+    font-size: 20px;
+}
+/* main */
+body{
+    background-color: whitesmoke;
+}
+main{
+    background-color:white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    padding: 50px;
+}
+h1{
+    text-align: center;
+    padding-top: 15px;
+}
+h4{
+    text-align: center;
+}
+.login-box{
+    width: 360px;
+    height:280px;
+    margin: auto;
+    border-radius: 3px;
+    background-color: whitesmoke;
+}
+form{
+    width: 300px;
+    margin-left: 20px;
+}
+form label{
+    display: flex;
+    margin-top: 10px;
+    font-size: 18px;
+}
+form input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+input[type="submit"]{
+    width: 200px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 70px;
+    border: none;
+    background-color: rgb(47, 9, 185);
+    color: white;
+    font-size: 18px;
+}
+.p2{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.p2 a{
+    color:white ;
+    text-decoration: none;
+}
+/* footer */
+footer{
+    background-color: whitesmoke;
+     padding: 5px;}
+footer hr{
+    padding: 1px;
+     background-color: rgb(70, 9, 185);
+    }
+.socials{
+    display: flex; 
+    justify-content: center;
+}
+
+
+@media(max-width:425px) {
+    .nav-list{display: none;}
+    .nav .menu{display: block;}
+    .nav-logo{font-size: 10px; padding-top: 5px;} 
+    .nav{height: 45%;}
+    
+}
+@media(max-width:375px) {
+    .login-box{
+        width: 300px;
+        height:280px;
+        margin: auto;
+        border-radius: 3px;
+        background-color: whitesmoke;
+    }
+    form input{width: 80%;}
+    input[type="submit"]{
+        width: 150px;
+        margin-left: 50px;
+    }
+    
+}
+@media(max-width:320px) {
+    .login-box{
+        width: 250px;
+        height:280px;
+        margin: auto;
+        border-radius: 3px;
+        background-color: whitesmoke;
+    }
+    form input{width: 60%;}
+    input[type="submit"]{
+        width: 150px;
+        margin-left: 30px;
+    }
+    
+}
