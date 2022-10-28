@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  place-content: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+main {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  /*justify-content: center;*/
+  flex-direction: row;
+}
+main div {
+  width: 100%;
+}
+
+.left-content {
+  background-color: hsl(31, 77%, 52%);
+  padding: 2em;
+  /* width: 100%; */
+}
+
+.middle-content {
+  background-color: hsl(184, 100%, 22%);
+  padding: 2em;
+  /* width: 100%; */
+}
+
+.right-content {
+  background-color: hsl(179, 100%, 13%);
+  padding: 2em;
+  /* width: 100%; */
+}
+
+img {
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  padding-bottom: 15px;
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+
+.b1 {
+  background: hsl(0, 0%, 95%);
+  color: hsl(31, 77%, 52%);
+  padding: 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: grab;
+}
+
+.b2 {
+  background: hsl(0, 0%, 95%);
+  color: hsl(184, 100%, 22%);
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: grab;
+}
+
+.b3 {
+  background: hsl(0, 0%, 95%);
+  color: hsl(179, 100%, 13%);
+  padding: 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: grab;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  transition: 0.4s;
+}
+
+@media (max-width: 375px) {
+  main {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
